@@ -2,6 +2,10 @@ const navId = document.getElementById("nav_menu"),
 ToggleBtnId = document.getElementById("toggle_btn"),
 CloseBtnId = document.getElementById("close_btn");
 
+export default function handler(req, res) {
+    res.status(200).send("Hello, this is a string response!"); // Harus string
+}
+
 // ===Show Menu===
 
 ToggleBtnId.addEventListener("click", () => {
